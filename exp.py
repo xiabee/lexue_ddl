@@ -16,8 +16,11 @@ user = {
     'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
     'Accept-Encoding':'gzip, deflate',
     'Referer': 'http://lexue.bit.edu.cn/',
-    'Cookie': 'MDLPROGLANG_MOODLE=0; sto-id-20480=APAJAAAKJCBP; MoodleSessionMOODLE=sgfmnukeqlbi0v6fobjbi5jf05',      
-    #通过cookie登陆校园网，亲测有效
+    
+    #-------------------------通过cookie登陆校园网-------------------------
+    'Cookie': '',      
+    #-------------------------通过cookie登陆校园网-------------------------
+    
     'Upgrade-Insecure-Requests': '1',
     'Cache-Control': 'max-age=0'
     }
