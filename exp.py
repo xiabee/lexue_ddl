@@ -116,7 +116,7 @@ flag = check(name_num,time_num,desc_num,clas_num)
 if flag:
     # for i in range(name_num):
     #     print("事项：{name}\n课程：{clas_name}\n截止日期：\n{time}\n描述：{desc}\n\n".format(name=ddl_name[i],clas_name=ddl_clas[i],time=ddl_time[i],desc=ddl_desc[i]))
-    f = open("./ddl.md",'w')
+    f = open("./ddl.md",'w',encoding="utf-8")
     f.write("#近期ddl\n")
     for i in range(name_num):
             f.write("事项：{name}\n课程：{clas_name}\n截止日期：\n{time}\n描述：{desc}\n\n".format(name=ddl_name[i],clas_name=ddl_clas[i],time=ddl_time[i],desc=ddl_desc[i]))
