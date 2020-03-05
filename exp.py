@@ -8,6 +8,10 @@ from bs4 import BeautifulSoup
 from time import *
 
 start_time = time()
+f_cookie = open('./cookie.txt','r',encoding='utf-8')
+cookie = f_cookie.readline()
+cookie = cookie.strip('\n')
+f_cookie.close()
 #----------------------------------------------------------------
 #配置headers，建立连接
 user = {
@@ -18,7 +22,7 @@ user = {
     'Referer': 'http://lexue.bit.edu.cn/',
     
     #-------------------------通过cookie登陆校园网------------------------
-    'Cookie': '', #这里复制自己的cookie    
+    'Cookie': cookie, #这里复制自己的cookie    
     #-------------------------通过cookie登陆校园网------------------------
     
     'Upgrade-Insecure-Requests': '1',
