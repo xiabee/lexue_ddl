@@ -18,7 +18,7 @@ user = {
     'Referer': 'http://lexue.bit.edu.cn/',
     
     #-------------------------通过cookie登陆校园网------------------------
-    'Cookie': '',      
+    'Cookie': '', #这里复制自己的cookie    
     #-------------------------通过cookie登陆校园网------------------------
     
     'Upgrade-Insecure-Requests': '1',
