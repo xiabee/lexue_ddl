@@ -1,5 +1,5 @@
 # lexue_ddl
-version:1.0<br>
+version:1.1<br>
 主要功能：乐学通知事项的爬取<br>
 依赖：requests,re,base64,bs4,time<br>
 登陆方法：cookie登陆<br>
