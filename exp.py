@@ -46,13 +46,9 @@ soup = BeautifulSoup(html,'html.parser')
 #把soup里面的scrip和style清理掉
 
 
-#------------------处理信息----------------------------------------------
-
 content = soup.find_all(name='div',attrs={"class":"eventlist"},)
 #找到全部通知信息
 # print(content)
-
-#------------------处理信息----------------------------------------------
 
 ddl_name = []
 ddl_clas = []
