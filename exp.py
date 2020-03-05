@@ -27,7 +27,7 @@ user = {
     #-------------------------通过cookie登陆校园网------------------------
     
     'Upgrade-Insecure-Requests': '1',
-    'Cache-Control': 'max-age=0'
+    'Cache-Control': 'max-age=0',
     }
 #通过抓包获取全部headers
 
@@ -119,8 +119,9 @@ if flag:
     f = open("./ddl.md",'w')
     f.write("#近期ddl\n")
     for i in range(name_num):
-            f.write("事项：{name}\n课程：{clas_name}\n截止日期：\n{time}\n描述：{desc}\n\n".format(name=ddl_name[i],clas_name=ddl_clas[i],time=ddl_time[i],desc=ddl_desc[i]))
+            f.write("事项：{name}\n课程：{clas_name}\n截止日期：{time}\n描述：{desc}\n\n".format(name=ddl_name[i],clas_name=ddl_clas[i],time=ddl_time[i],desc=ddl_desc[i]))
     f.close()
+    print("ddl.md 已生成")
 else:
     print("Something went wrong!!!")
 
