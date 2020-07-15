@@ -61,6 +61,7 @@ ddl_time = []
 ddl_desc = []
 #ddl名称、课程归属、截止时间、描述
 
+total = []
 for x_cont in content:
     total = x_cont.find_all(name='h3',attrs={"class":["referer","name"]})
 #收集ddl名称
