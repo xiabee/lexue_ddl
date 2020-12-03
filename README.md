@@ -1,11 +1,11 @@
 # lexue_ddl
 #### 概述
 
-本项目是一个十分简陋的爬虫示例，设计初衷只是想避免翻阅北理乐学的通知，结果做完之后遇到了站点重构......那就只好也重构一下爬虫了（x）
+本项目是一个十分简陋的爬虫示例，设计初衷只是想避免翻阅北理乐学的通知，结果做完之后遇到了站点重构......那就只好也重构一下爬虫了（x）......然后顺手做了一个词云
 
-* version:1.2
+* version:1.3
 * author：xiabee
-* 主要功能：`BIT乐学`通知事项的爬取
+* 主要功能：`BIT乐学`通知事项的爬取、词云制作
 * 依赖：`requests,re,base64,bs4,time`等
 * 登陆方法：cookie登陆
 
@@ -14,12 +14,23 @@
 #### 目录结构
 
 ```
-.
 ├── cookie.txt
 ├── ddl.md
 ├── main.py
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── wordcloud
+    ├── cloud.py
+    ├── love.jpg
+    ├── __pycache__
+    │   ├── wordcloud.cpython-38.pyc
+    │   └── wordcloud.cpython-39.pyc
+    └── ttf
+        ├── STCAIYUN.TTF
+        ├── STXINGKA.TTF
+        └── STZHONGS.TTF
+
+3 directories, 12 files
 ```
 
 
@@ -30,7 +41,8 @@
 
 * 北理乐学于`2020.5`做了一次大更新，故此脚本也替换了相关键值对的搜索
 * 添加了错误信息处理，判断脚本是否登录
-* 添加了`requirements.txt`，便于一键式导入依赖、
+* 添加了`requirements.txt`，便于一键式导入依赖
+* 添加了`词云`功能
 
 
 
@@ -71,7 +83,16 @@
   ......
   ```
 
-  
+* 词云使用方法：
+
+  * 进入`./wordcloud`文件夹
+
+  * 直接运行或命令行运行`cloud.py`
+
+  * ```
+    cd wordcloud
+    python3 cloud.py
+    ```
 
 #### 附录：寻找cookie：
 

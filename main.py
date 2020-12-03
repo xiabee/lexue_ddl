@@ -14,7 +14,6 @@ cookie = f_cookie.readline()
 cookie = cookie.strip('\n')
 f_cookie.close()
 
-#----------------------------------------------------------------
 #配置headers，建立连接
 user = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0',
@@ -22,10 +21,7 @@ user = {
     'Accept-Language': 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
     'Accept-Encoding':'gzip, deflate',
     'Referer': 'http://lexue.bit.edu.cn/',
-
     'Cookie': cookie, 
-    #-------------------------通过cookie登陆校园网------------------------
-    
     'Upgrade-Insecure-Requests': '1',
     'Cache-Control': 'max-age=0',
     }
