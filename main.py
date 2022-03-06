@@ -27,7 +27,7 @@ user = {
     }
 #通过抓包获取全部headers
 
-url = 'http://lexue.bit.edu.cn/calendar/view.php'              
+url = 'https://lexue.bit.edu.cn/calendar/view.php'              
 #乐学通知地址
 
 ddl_name = []
