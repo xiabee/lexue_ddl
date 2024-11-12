@@ -4,6 +4,6 @@ jieba==0.42.1
 matplotlib==3.3.3
 numpy==1.22.0
 Pillow
-requests==2.31.0
+requests==2.32.2
 selenium==3.141.0
 wordcloud==1.8.1
