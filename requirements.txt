@@ -1,9 +1,9 @@
-﻿beautifulsoup4==4.9.3
+beautifulsoup4==4.9.3
 bs4==0.0.1
 jieba==0.42.1
 matplotlib==3.3.3
 numpy==1.22.0
 Pillow
-requests==2.24.0
+requests==2.31.0
 selenium==3.141.0
 wordcloud==1.8.1
